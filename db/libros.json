@@ -6,7 +6,6 @@
             "autor": "James Islington",
             "estado": "pendiente",
             "saga": "La Jerarquía",
-            "numeroSaga": 1,
             "genero": "Fantasía"
         },
         {
@@ -15,7 +14,6 @@
             "autor": "James Islington",
             "estado": "pendiente",
             "saga": "La Jerarquía",
-            "numeroSaga": 2,
             "genero": "Fantasía"
         },
         {
@@ -24,7 +22,6 @@
             "autor": "Pierce Brown",
             "estado": "leído",
             "saga": "Amanecer Rojo",
-            "numeroSaga": 1,
             "genero": "Ciencia ficción"
         },
         {
@@ -33,7 +30,6 @@
             "autor": "Pierce Brown",
             "estado": "leído",
             "saga": "Amanecer Rojo",
-            "numeroSaga": 2,
             "genero": "Ciencia ficción"
         },
         {
@@ -42,7 +38,6 @@
             "autor": "Pierce Brown",
             "estado": "leído",
             "saga": "Amanecer Rojo",
-            "numeroSaga": 3,
             "genero": "Ciencia ficción"
         },
         {
@@ -51,7 +46,6 @@
             "autor": "Pierce Brown",
             "estado": "pendiente",
             "saga": "Amanecer Rojo",
-            "numeroSaga": 4,
             "genero": "Ciencia ficción"
         },
         {
@@ -60,7 +54,6 @@
             "autor": "Pierce Brown",
             "estado": "pendiente",
             "saga": "Amanecer Rojo",
-            "numeroSaga": 5,
             "genero": "Ciencia ficción"
         },
         {
@@ -69,7 +62,6 @@
             "autor": "Brandon Sanderson",
             "estado": "leído",
             "saga": "Nacidos de la Bruma - Era 2",
-            "numeroSaga": 1,
             "genero": "Fantasía"
         },
         {
@@ -78,7 +70,6 @@
             "autor": "Brandon Sanderson",
             "estado": "leído",
             "saga": "Nacidos de la Bruma - Era 2",
-            "numeroSaga": 2,
             "genero": "Fantasía"
         },
         {
@@ -87,7 +78,6 @@
             "autor": "Brandon Sanderson",
             "estado": "pendiente",
             "saga": "Nacidos de la Bruma - Era 2",
-            "numeroSaga": 3,
             "genero": "Fantasía"
         },
         {
@@ -96,7 +86,6 @@
             "autor": "Brandon Sanderson",
             "estado": "pendiente",
             "saga": "Nacidos de la Bruma - Era 2",
-            "numeroSaga": 4,
             "genero": "Fantasía"
         },
         {
@@ -105,7 +94,6 @@
             "autor": "Patrick Rothfuss",
             "estado": "leído",
             "saga": "Crónica del Asesino de Reyes",
-            "numeroSaga": 1,
             "genero": "Fantasía"
         },
         {
@@ -114,7 +102,6 @@
             "autor": "Patrick Rothfuss",
             "estado": "leído",
             "saga": "Crónica del Asesino de Reyes",
-            "numeroSaga": 2,
             "genero": "Fantasía"
         },
         {
@@ -123,7 +110,6 @@
             "autor": "Joe Abercrombie",
             "estado": "pendiente",
             "saga": "The First Law",
-            "numeroSaga": 1,
             "genero": "Fantasía"
         },
         {
@@ -132,7 +118,6 @@
             "autor": "Joe Abercrombie",
             "estado": "pendiente",
             "saga": "The First Law",
-            "numeroSaga": 2,
             "genero": "Fantasía"
         },
         {
@@ -141,7 +126,6 @@
             "autor": "Joe Abercrombie",
             "estado": "pendiente",
             "saga": "The First Law",
-            "numeroSaga": 3,
             "genero": "Fantasía"
         },
         {
@@ -150,7 +134,6 @@
             "autor": "Joe Abercrombie",
             "estado": "leído",
             "saga": "El Mar Quebrado",
-            "numeroSaga": 1,
             "genero": "Fantasía"
         },
         {
@@ -159,7 +142,6 @@
             "autor": "Joe Abercrombie",
             "estado": "pendiente",
             "saga": "El Mar Quebrado",
-            "numeroSaga": 2,
             "genero": "Fantasía"
         },
         {
@@ -168,7 +150,6 @@
             "autor": "Joe Abercrombie",
             "estado": "pendiente",
             "saga": "El Mar Quebrado",
-            "numeroSaga": 3,
             "genero": "Fantasía"
         },
         {
@@ -177,7 +158,6 @@
             "autor": "Andy Weir",
             "estado": "leído",
             "saga": "",
-            "numeroSaga": 1,
             "genero": "Ciencia ficción"
         },
         {
@@ -186,7 +166,6 @@
             "autor": "Brandon Sanderson",
             "estado": "leído",
             "saga": "Nacidos de la Bruma - Era 1",
-            "numeroSaga": 1,
             "genero": "Fantasía"
         },
         {
@@ -195,7 +174,6 @@
             "autor": "Brandon Sanderson",
             "estado": "leído",
             "saga": "Nacidos de la Bruma - Era 1",
-            "numeroSaga": 2,
             "genero": "Fantasía"
         },
         {
@@ -204,7 +182,6 @@
             "autor": "Brandon Sanderson",
             "estado": "leído",
             "saga": "Nacidos de la Bruma - Era 1",
-            "numeroSaga": 3,
             "genero": "Fantasía"
         }
     ]

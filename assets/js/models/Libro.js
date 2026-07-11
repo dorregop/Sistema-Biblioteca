@@ -1,25 +1,44 @@
+import { ESTADOS } from "../constantes/estados.js";
 export class Libro {
 
-    constructor(id, titulo, autor, genero, saga, numeroSaga, estado,) {
-        this.id = id;
+    constructor({ titulo, autor, genero, saga, estado = ESTADOS.DISPONIBLE, id = crypto.randomUUID() }) {
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
         this.saga = saga;
-        this.numeroSaga = numeroSaga;
-        this.estado = estado;
+        this.estado = estado.trim().toLowerCase();
+        this.id = id;
     }
 
     cambiarEstado(nuevoEstado) {
-        this.estado = nuevoEstado;
+        nuevoEstado = nuevoEstado.trim().toLowerCase();
+
+        if (nuevoEstado === this.estado) {
+            return false;
+        }
+
+        switch (this.estado) {
+            case ESTADOS.DISPONIBLE:
+                if (nuevoEstado === ESTADOS.RESERVADO || nuevoEstado === ESTADOS.PRESTADO) {
+                    this.estado = nuevoEstado;
+                    return true;
+                }
+                break;
+            case ESTADOS.RESERVADO:
+            case ESTADOS.PRESTADO:
+                if (nuevoEstado === ESTADOS.DISPONIBLE) {
+                    this.estado = nuevoEstado;
+                    return true;
+                }
+                break;
+        }
+        return false;
     }
 
-    actualizarDatos(datos) {
-        this.titulo = datos.titulo;
-        this.autor = datos.autor;
-        this.genero = datos.genero;
-        this.saga = datos.saga;
-        this.numeroSaga = datos.numeroSaga;
-        this.estado = datos.estado;
+    actualizarDatos({ titulo, autor, genero, saga }) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.genero = genero;
+        this.saga = saga;
     }
 }
