@@ -4,7 +4,7 @@
             "id": "cdcfbecc-d084-4e1f-908b-2b857ca15b83",
             "titulo": "La voluntad de muchos",
             "autor": "James Islington",
-            "estado": "pendiente",
+            "estado": "Disponible",
             "saga": "La Jerarquía",
             "genero": "Fantasía"
         },
@@ -12,7 +12,7 @@
             "id": "52c443c6-f1f6-41be-86fb-681e5c17bac6",
             "titulo": "La Fuerza de Pocos",
             "autor": "James Islington",
-            "estado": "pendiente",
+            "estado": "Disponible",
             "saga": "La Jerarquía",
             "genero": "Fantasía"
         },
@@ -20,7 +20,7 @@
             "id": "5de29c61-8146-47b1-a8e7-4a400688b830",
             "titulo": "Amanecer Rojo",
             "autor": "Pierce Brown",
-            "estado": "leído",
+            "estado": "Disponible",
             "saga": "Amanecer Rojo",
             "genero": "Ciencia ficción"
         },
@@ -28,7 +28,7 @@
             "id": "58d7fce6-c4fb-43ff-8403-3bf9af03f92b",
             "titulo": "Hijo Dorado",
             "autor": "Pierce Brown",
-            "estado": "leído",
+            "estado": "Disponible",
             "saga": "Amanecer Rojo",
             "genero": "Ciencia ficción"
         },
@@ -36,7 +36,7 @@
             "id": "2ae42a0a-37f7-40ed-b66c-f2aefc733ddd",
             "titulo": "Mañana Azul",
             "autor": "Pierce Brown",
-            "estado": "leído",
+            "estado": "Disponible",
             "saga": "Amanecer Rojo",
             "genero": "Ciencia ficción"
         },
@@ -44,7 +44,7 @@
             "id": "a50340c1-b692-4a47-81c8-ffeb238bdd3d",
             "titulo": "Edad Oscura",
             "autor": "Pierce Brown",
-            "estado": "pendiente",
+            "estado": "Disponible",
             "saga": "Amanecer Rojo",
             "genero": "Ciencia ficción"
         },
@@ -52,7 +52,7 @@
             "id": "22bc4014-edfc-412b-aea4-926f767e36c7",
             "titulo": "Furia Oscura",
             "autor": "Pierce Brown",
-            "estado": "pendiente",
+            "estado": "Disponible",
             "saga": "Amanecer Rojo",
             "genero": "Ciencia ficción"
         },
@@ -60,7 +60,7 @@
             "id": "c6c5b211-be27-4de9-92cb-fd23365c3ab3",
             "titulo": "Aleación de Ley",
             "autor": "Brandon Sanderson",
-            "estado": "leído",
+            "estado": "Reservado",
             "saga": "Nacidos de la Bruma - Era 2",
             "genero": "Fantasía"
         },
@@ -68,7 +68,7 @@
             "id": "7aa81a29-432b-4fd1-b027-99298e8857c1",
             "titulo": "Sombras de Identidad",
             "autor": "Brandon Sanderson",
-            "estado": "leído",
+            "estado": "Reservado",
             "saga": "Nacidos de la Bruma - Era 2",
             "genero": "Fantasía"
         },
@@ -76,7 +76,7 @@
             "id": "4cf846fc-c094-4c50-add1-b722d6ec1e46",
             "titulo": "Brazales de Duelo",
             "autor": "Brandon Sanderson",
-            "estado": "pendiente",
+            "estado": "Reservado",
             "saga": "Nacidos de la Bruma - Era 2",
             "genero": "Fantasía"
         },
@@ -84,7 +84,7 @@
             "id": "8e05a6fe-a651-4e1e-bdbd-5929078d50f9",
             "titulo": "El Metal Perdido",
             "autor": "Brandon Sanderson",
-            "estado": "pendiente",
+            "estado": "Prestado",
             "saga": "Nacidos de la Bruma - Era 2",
             "genero": "Fantasía"
         },
@@ -92,7 +92,7 @@
             "id": "50b03e1c-4a72-4ca9-8463-1465ab379ec7",
             "titulo": "El nombre del viento",
             "autor": "Patrick Rothfuss",
-            "estado": "leído",
+            "estado": "Prestado",
             "saga": "Crónica del Asesino de Reyes",
             "genero": "Fantasía"
         },
@@ -100,7 +100,7 @@
             "id": "28c18d61-c08a-4dbc-8741-1bf6a69deba0",
             "titulo": "El temor de un hombre sabio",
             "autor": "Patrick Rothfuss",
-            "estado": "leído",
+            "estado": "Prestado",
             "saga": "Crónica del Asesino de Reyes",
             "genero": "Fantasía"
         },
@@ -108,31 +108,31 @@
             "id": "dcab7d5a-c1d7-4b03-bcc7-52ed02de0eb1",
             "titulo": "La voz de las espadas",
             "autor": "Joe Abercrombie",
-            "estado": "pendiente",
-            "saga": "The First Law",
+            "estado": "Prestado",
+            "saga": "La Primera Ley",
             "genero": "Fantasía"
         },
         {
             "id": "c2cbaa55-bfde-4bd9-bdf0-3dbf2cd45174",
             "titulo": "Antes de que los cuelguen",
             "autor": "Joe Abercrombie",
-            "estado": "pendiente",
-            "saga": "The First Law",
+            "estado": "Disponible",
+            "saga": "La Primera Ley",
             "genero": "Fantasía"
         },
         {
             "id": "6da4976c-29fe-47a0-b7d9-3610e19cfbb0",
             "titulo": "El último argumento de los reyes",
             "autor": "Joe Abercrombie",
-            "estado": "pendiente",
-            "saga": "The First Law",
+            "estado": "Disponible",
+            "saga": "La Primera Ley",
             "genero": "Fantasía"
         },
         {
             "id": "597220db-7f59-4cbd-8374-226258597048",
             "titulo": "Medio Rey",
             "autor": "Joe Abercrombie",
-            "estado": "leído",
+            "estado": "Disponible",
             "saga": "El Mar Quebrado",
             "genero": "Fantasía"
         },
@@ -140,7 +140,7 @@
             "id": "d2ea9a01-7343-4f56-922f-1c97b99bc09a",
             "titulo": "Medio Mundo",
             "autor": "Joe Abercrombie",
-            "estado": "pendiente",
+            "estado": "Disponible",
             "saga": "El Mar Quebrado",
             "genero": "Fantasía"
         },
@@ -148,7 +148,7 @@
             "id": "d8c250d9-af30-4114-aed8-1c1bf2a0f358",
             "titulo": "Media Guerra",
             "autor": "Joe Abercrombie",
-            "estado": "pendiente",
+            "estado": "Disponible",
             "saga": "El Mar Quebrado",
             "genero": "Fantasía"
         },
@@ -156,7 +156,7 @@
             "id": "8a904fe1-1b17-4133-b3af-b719e3f0294f",
             "titulo": "Proyecto Hail Mary",
             "autor": "Andy Weir",
-            "estado": "leído",
+            "estado": "Disponible",
             "saga": "",
             "genero": "Ciencia ficción"
         },
@@ -164,7 +164,7 @@
             "id": "b1422377-bc89-42ed-8d05-ac3bfed58a7b",
             "titulo": "El Imperio Final",
             "autor": "Brandon Sanderson",
-            "estado": "leído",
+            "estado": "Prestado",
             "saga": "Nacidos de la Bruma - Era 1",
             "genero": "Fantasía"
         },
@@ -172,7 +172,7 @@
             "id": "4eefe402-039e-4989-9301-1844d35b2721",
             "titulo": "El Pozo de la Ascensión",
             "autor": "Brandon Sanderson",
-            "estado": "leído",
+            "estado": "Prestado",
             "saga": "Nacidos de la Bruma - Era 1",
             "genero": "Fantasía"
         },
@@ -180,7 +180,7 @@
             "id": "1e28a3ff-ae3b-4a2c-93f7-c7528594442f",
             "titulo": "El Héroe de las Eras",
             "autor": "Brandon Sanderson",
-            "estado": "leído",
+            "estado": "Reservado",
             "saga": "Nacidos de la Bruma - Era 1",
             "genero": "Fantasía"
         }

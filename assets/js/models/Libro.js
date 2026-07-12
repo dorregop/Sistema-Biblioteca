@@ -1,4 +1,4 @@
-import { ESTADOS } from "../constantes/estados.js";
+import { ESTADOS } from "./estados.js";
 export class Libro {
 
     constructor({ titulo, autor, genero, saga, estado = ESTADOS.DISPONIBLE, id = crypto.randomUUID() }) {
