@@ -1,5 +1,5 @@
 export const ESTADOS = {
-    DISPONIBLE: "disponible",
-    RESERVADO: "reservado",
-    PRESTADO: "prestado"
+    DISPONIBLE: "Disponible",
+    RESERVADO: "Reservado",
+    PRESTADO: "Prestado"
 };

@@ -4,7 +4,7 @@ export class Biblioteca {
     }
 
     agregarLibro(libro){
-        this.libros.push(libro);
+        this.libros.unshift(libro);
     }
 
     buscarLibro(id){

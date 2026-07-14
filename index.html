@@ -13,6 +13,8 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script defer type="module" src="./assets/js/script.js"></script>
     <script defer type="module" src="./assets/js/eventos/eventos.js"></script>
 </head>
@@ -23,7 +25,7 @@
     </header>
 
     <main class="container">
-        <!-- <section class="d-flex justify-content-start">
+        <section class="d-flex justify-content-start">
             <div>
                 <form class="d-flex align-items-center">
                     <div>
@@ -40,12 +42,11 @@
                     <button type="button" class="btn btn-primary my-3" id="btn-filtrar">Filtrar</button>
                 </form>
             </div>
-        </section> -->
+        </section>
         <section>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLibro">
                 Agregar libro
             </button>
-            <!-- <button class="btn btn-primary" id="btn-agregar">Agregar Libro</button> -->
             <div class="modal fade" id="modalLibro" tabindex="-1" aria-labelledby="modalLibroLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
@@ -80,7 +81,8 @@
                                     <label for="saga" class="form-label">
                                         Saga
                                     </label>
-                                    <input type="text" class="form-control" id="saga" name="saga" placeholder="Dejar en blanco si no tiene saga">
+                                    <input type="text" class="form-control" id="saga" name="saga"
+                                        placeholder="Dejar en blanco si no tiene saga">
                                 </div>
                             </div>
                             <div class="modal-footer">

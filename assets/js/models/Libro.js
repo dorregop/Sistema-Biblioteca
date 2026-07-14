@@ -6,12 +6,12 @@ export class Libro {
         this.autor = autor;
         this.genero = genero;
         this.saga = saga;
-        this.estado = estado.trim().toLowerCase();
+        this.estado = estado;
         this.id = id;
     }
 
     cambiarEstado(nuevoEstado) {
-        nuevoEstado = nuevoEstado.trim().toLowerCase();
+        nuevoEstado = nuevoEstado;
 
         if (nuevoEstado === this.estado) {
             return false;
