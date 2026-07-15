@@ -25,8 +25,4 @@ export class Biblioteca {
             libro.actualizarDatos(datos);
         }
     }
-
-    listarLibros() {
-        return this.libros;
-    }
 }

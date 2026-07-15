@@ -2,11 +2,6 @@ import { Libro } from "../models/Libro.js";
 import { ESTADOS } from "../models/estados.js";
 import { mostrarLibros, mostrarEstadisticas } from "../dom/render.js";
 
-function actualizarVista(gestorBiblioteca){
-    mostrarLibros(gestorBiblioteca.listarLibros());
-    mostrarEstadisticas(gestorBiblioteca.listarLibros());
-}
-
 export function guardarLibro(event, gestorBiblioteca) {
     event.preventDefault();
     const datos = new FormData(event.target);
@@ -39,7 +34,8 @@ export function guardarLibro(event, gestorBiblioteca) {
     if (modalInstance) {
         modalInstance.hide();
     }
-    actualizarVista(gestorBiblioteca);
+    mostrarLibros(gestorBiblioteca.libros);
+    mostrarEstadisticas(gestorBiblioteca.libros);
 }
 
 export function abrirModalAgregar() {
@@ -108,7 +104,8 @@ export function manejarAccionesTabla(event, gestorBiblioteca) {
                 }).then((result) => {
                     if (result.isConfirmed) {
                         gestorBiblioteca.eliminarLibro(id);
-                        actualizarVista(gestorBiblioteca)
+                        mostrarLibros(gestorBiblioteca.libros);
+                        mostrarEstadisticas(gestorBiblioteca.libros);
                         Swal.fire({
                             title: "¡Eliminado!",
                             text: "Libro eliminado correctamente",
@@ -122,5 +119,6 @@ export function manejarAccionesTabla(event, gestorBiblioteca) {
             abrirModalEditar(libro);
             return;
     }
-    actualizarVista(gestorBiblioteca)
+    mostrarLibros(gestorBiblioteca.libros);
+    mostrarEstadisticas(gestorBiblioteca.libros);
 }

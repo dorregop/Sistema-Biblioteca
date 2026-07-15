@@ -141,7 +141,7 @@ function crearBotonesAcciones(libro) {
     return botones;
 }
 
-function actualizarVista(gestorBiblioteca) {
-    gestorBiblioteca.listarLibros();
-    mostrarEstadisticas(gestorBiblioteca.libros);
+export function actualizarVista(libros) {
+    mostrarLibros(libros);
+    mostrarEstadisticas(libros);
 }
