@@ -11,8 +11,6 @@ export class Libro {
     }
 
     cambiarEstado(nuevoEstado) {
-        nuevoEstado = nuevoEstado;
-
         if (nuevoEstado === this.estado) {
             return false;
         }
@@ -36,9 +34,15 @@ export class Libro {
     }
 
     actualizarDatos({ titulo, autor, genero, saga }) {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.genero = genero;
-        this.saga = saga;
+        if (titulo) {
+            this.titulo = titulo;
+        }
+        if (autor) {
+            this.autor = autor;
+        }
+        if (genero) {
+            this.genero = genero;
+        }
+            this.saga = saga;
     }
 }

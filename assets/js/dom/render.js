@@ -1,4 +1,37 @@
 import { ESTADOS } from "../models/estados.js";
+export function mostrarEstadisticas(libros) {
+    const contenedor = document.querySelector("#mostrar-estadisticas");
+    if (!contenedor) {
+        return;
+    }
+    let html = "";
+    let disponibles = 0;
+    let reservados = 0;
+    let prestados = 0;
+    libros.forEach(libro => {
+        switch (libro.estado) {
+            case ESTADOS.DISPONIBLE:
+                disponibles++;
+                break;
+            case ESTADOS.RESERVADO:
+                reservados++;
+                break;
+            case ESTADOS.PRESTADO:
+                prestados++
+                break;
+        }
+    });
+    html += `
+        <ul>
+            <li>Total libros: ${libros.length}</li>
+            <li>Libros Disponibles: ${disponibles}</li>
+            <li>Libros Prestados: ${prestados}</li>
+            <li>Libros Reservados: ${reservados}</li>
+        </ul>
+        `
+    contenedor.innerHTML = html;
+}
+
 export function mostrarLibros(libros) {
     const contenedor = document.querySelector("#cuerpo-tabla-libros");
     let html = "";
@@ -16,8 +49,7 @@ export function mostrarLibros(libros) {
                 break;
         }
 
-
-        const tieneSaga = libro.saga === "" ? "N/A" : libro.saga;
+        const tieneSaga = libro.saga || "N/A";
         html += `
             <tr>
                 <th scope="row">${libro.titulo}</th>
@@ -41,7 +73,13 @@ function crearBotonesAcciones(libro) {
     switch (libro.estado) {
         case ESTADOS.DISPONIBLE:
             botones += `
-                <td>
+                    <td>
+                    <button
+                        class="btn btn-outline-primary"
+                        data-accion="editar"
+                        data-id="${libro.id}">
+                        Editar
+                    </button>
                     <button
                         class="btn btn-outline-secondary"
                         data-accion="reservar"
@@ -67,16 +105,16 @@ function crearBotonesAcciones(libro) {
             botones += `
                 <td>
                     <button
+                        class="btn btn-outline-primary"
+                        data-accion="editar"
+                        data-id="${libro.id}">
+                        Editar
+                    </button>
+                    <button
                         class="btn btn-outline-success"
                         data-accion="liberar"
                         data-id="${libro.id}">
                         Liberar Reserva
-                    </button>
-                    <button
-                        class="btn btn-outline-danger"
-                        data-accion="eliminar"
-                        data-id="${libro.id}">
-                        Eliminar
                     </button>
                 </td>
             `
@@ -85,20 +123,25 @@ function crearBotonesAcciones(libro) {
             botones += `
                 <td>
                     <button
+                        class="btn btn-outline-primary"
+                        data-accion="editar"
+                        data-id="${libro.id}">
+                        Editar
+                    </button>
+                    <button
                         class="btn btn-outline-success"
                         data-accion="devolver"
                         data-id="${libro.id}">
                         Devolver
-                    </button>
-                    <button
-                        class="btn btn-outline-danger"
-                        data-accion="eliminar"
-                        data-id="${libro.id}">
-                        Eliminar
                     </button>
                 </td>
             `
             break;
     }
     return botones;
+}
+
+function actualizarVista(gestorBiblioteca) {
+    gestorBiblioteca.listarLibros();
+    mostrarEstadisticas(gestorBiblioteca.libros);
 }

@@ -3,26 +3,30 @@ export class Biblioteca {
         this.libros = libros;
     }
 
-    agregarLibro(libro){
+    agregarLibro(libro) {
         this.libros.unshift(libro);
     }
 
-    buscarLibro(id){
+    buscarLibro(id) {
         return this.libros.find(
             libro => libro.id === id
         );
     }
 
-    eliminarLibro(id){
+    eliminarLibro(id) {
         this.libros = this.libros.filter(
             libro => libro.id !== id
         );
     }
 
-    editarLibro(id, datos){
+    editarLibro(id, datos) {
         const libro = this.buscarLibro(id);
-        if(libro){
+        if (libro) {
             libro.actualizarDatos(datos);
         }
+    }
+
+    listarLibros() {
+        return this.libros;
     }
 }

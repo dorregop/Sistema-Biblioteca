@@ -1,5 +1,5 @@
 import { obtenerLibros } from "./servicios/api.js";
-import { mostrarLibros } from "./dom/render.js";
+import { mostrarEstadisticas, mostrarLibros } from "./dom/render.js";
 import { Biblioteca } from "./models/Biblioteca.js";
 import { inicializarEventos } from "./eventos/eventos.js";
 import { Libro } from "./models/Libro.js";
@@ -10,6 +10,7 @@ async function iniciarApp() {
         const librosInstancia = libros.map(libro => new Libro(libro));
         const gestorBiblioteca = new Biblioteca(librosInstancia);
         mostrarLibros(gestorBiblioteca.libros);
+        mostrarEstadisticas(gestorBiblioteca.libros);
         inicializarEventos(gestorBiblioteca);
     } catch (error) {
         console.error("Error al iniciar la aplicación:", error);

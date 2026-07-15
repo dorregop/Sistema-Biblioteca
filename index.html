@@ -25,6 +25,13 @@
     </header>
 
     <main class="container">
+        <section>
+            <h2>Estadísticas</h2>
+            <div id="mostrar-estadisticas">
+
+            </div>
+        </section>
+
         <section class="d-flex justify-content-start">
             <div>
                 <form class="d-flex align-items-center">
@@ -44,16 +51,16 @@
             </div>
         </section>
         <section>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLibro">
+            <button type="button" id="btn-agregar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLibro">
                 Agregar libro
             </button>
             <div class="modal fade" id="modalLibro" tabindex="-1" aria-labelledby="modalLibroLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modalLibroLabel">
+                            <h5 class="modal-title" id="titulo-modal">
                                 Agregar libro
-                            </h1>
+                            </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
                             </button>
                         </div>
@@ -85,6 +92,7 @@
                                         placeholder="Dejar en blanco si no tiene saga">
                                 </div>
                             </div>
+                            <input type="hidden" id="id-libro" name="id">
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                                     Cancelar
@@ -101,7 +109,8 @@
 
         <section class="py-3">
             <div>
-                <table class="table" id="tabla-libros">
+                <h2 class="text-center">Listado de Libros</h2>
+                <table class="table my-3" id="tabla-libros">
                     <thead>
                         <tr>
                             <th scope="col" class="text-center">Título</th>
