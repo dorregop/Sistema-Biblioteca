@@ -3,7 +3,7 @@ import { mostrarEstadisticas, mostrarLibros, actualizarVista } from "./dom/rende
 import { Biblioteca } from "./models/Biblioteca.js";
 import { inicializarEventos } from "./eventos/eventos.js";
 import { Libro } from "./models/Libro.js";
-import { inicializarFiltros } from "./eventos/filtros.js";
+import { inicializarFiltros, cargarEstados, cargarGeneros } from "./eventos/filtros.js";
 
 async function iniciarApp() {
     try {
@@ -14,6 +14,8 @@ async function iniciarApp() {
         mostrarEstadisticas(gestorBiblioteca.libros);
         inicializarEventos(gestorBiblioteca);
         inicializarFiltros(gestorBiblioteca);
+        cargarEstados();
+        cargarGeneros(gestorBiblioteca);
     } catch (error) {
         console.error("Error al iniciar la aplicación:", error);
     }

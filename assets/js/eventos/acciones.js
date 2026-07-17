@@ -50,16 +50,27 @@ export function abrirModalAgregar() {
 }
 
 export function abrirModalEditar(libro) {
-    document.querySelector("#titulo").value = libro.titulo;
-    document.querySelector("#autor").value = libro.autor;
-    document.querySelector("#genero").value = libro.genero;
-    document.querySelector("#saga").value = libro.saga;
-    document.querySelector("#id-libro").value = libro.id;
+    const datosOriginales = {
+        titulo: libro.titulo,
+        autor: libro.autor,
+        genero: libro.genero,
+        saga: libro.saga
+    };
+
+    verificarCambios(datosOriginales);
     document.querySelector("#titulo-modal").textContent = "Editar libro";
+
+    const btnGuardar = document.querySelector("#btn-guardar-libro");
+    btnGuardar.disabled = true;
+
     const modal = new bootstrap.Modal(
         document.querySelector("#modalLibro")
     );
     modal.show();
+    const formulario = document.querySelector("#form-libro");
+    formulario.addEventListener("input", () => {
+        verificarCambios(datosOriginales);
+    });
 }
 
 export function manejarAccionesTabla(event, gestorBiblioteca) {
@@ -121,4 +132,18 @@ export function manejarAccionesTabla(event, gestorBiblioteca) {
     }
     mostrarLibros(gestorBiblioteca.libros);
     mostrarEstadisticas(gestorBiblioteca.libros);
+}
+
+function verificarCambios(datosOriginales) {
+    const datosActuales = {
+        titulo: document.querySelector("#titulo").value,
+        autor: document.querySelector("#autor").value,
+        genero: document.querySelector("#genero").value,
+        saga: document.querySelector("#saga").value
+    };
+
+    const btnGuardar = document.querySelector("#btn-guardar-libro");
+
+    btnGuardar.disabled =
+        JSON.stringify(datosActuales) === JSON.stringify(datosOriginales);
 }
