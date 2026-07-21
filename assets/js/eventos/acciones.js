@@ -57,6 +57,12 @@ export function abrirModalEditar(libro) {
         saga: libro.saga
     };
 
+    document.querySelector("#titulo").value = libro.titulo;
+    document.querySelector("#autor").value = libro.autor;
+    document.querySelector("#genero").value = libro.genero;
+    document.querySelector("#saga").value = libro.saga;
+    document.querySelector("#id-libro").value = libro.id;
+
     verificarCambios(datosOriginales);
     document.querySelector("#titulo-modal").textContent = "Editar libro";
 
