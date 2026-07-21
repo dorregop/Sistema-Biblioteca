@@ -7,9 +7,15 @@ import { inicializarFiltros, cargarEstados, cargarGeneros } from "./eventos/filt
 
 async function iniciarApp() {
     try {
-        const libros = await obtenerLibros();
-        const librosInstancia = libros.map(libro => new Libro(libro));
-        const gestorBiblioteca = new Biblioteca(librosInstancia);
+        const gestorBiblioteca = new Biblioteca();
+        gestorBiblioteca.cargarDesdeLocalStorage();
+        if (gestorBiblioteca.libros.length === 0) {
+            const libros = await obtenerLibros();
+            gestorBiblioteca.libros = libros.map(
+                libro => new Libro(libro)
+            );
+            gestorBiblioteca.guardarEnLocalStorage();
+        }
         mostrarLibros(gestorBiblioteca.libros);
         mostrarEstadisticas(gestorBiblioteca.libros);
         inicializarEventos(gestorBiblioteca);

@@ -130,6 +130,7 @@ export function manejarAccionesTabla(event, gestorBiblioteca) {
             abrirModalEditar(libro);
             return;
     }
+    gestorBiblioteca.guardarEnLocalStorage();
     mostrarLibros(gestorBiblioteca.libros);
     mostrarEstadisticas(gestorBiblioteca.libros);
 }
