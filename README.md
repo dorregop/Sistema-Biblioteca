@@ -199,14 +199,8 @@ git clone https://github.com/usuario/mi-biblioteca.git
 
 ---
 
-# 📸 Capturas
-
-*(Agregar aquí imágenes de la aplicación.)*
-
----
-
 # 👨‍💻 Autor
 
-Desarrollado por **Diego**.
+Desarrollado por **Diego Andrés Orrego Pantoja**.
 
 Proyecto realizado como práctica del módulo de JavaScript, aplicando conceptos de programación orientada a objetos, manipulación del DOM, eventos, persistencia de datos y consumo de información desde archivos JSON.
